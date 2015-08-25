@@ -1,0 +1,52 @@
+@import '../variables.less'; // Можно удалять, это только для удобства написания кода.
+
+html {
+  box-sizing: border-box;
+  font-size: @html-size;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: @font-family;
+  font-size: @font-size;
+  line-height: @line-height;
+  color: @text-color;
+  background-color: @body-bg;
+  margin: 0 auto;
+}
+
+/* a {
+  color: @link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+    text-decoration: @link-hover-decoration;
+  }
+} */
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* hr {
+  margin-top:    @line-height-computed;
+  margin-bottom: @line-height-computed;
+  border: 0;
+  border-top: 1px solid @hr-border;
+} */
